@@ -10,5 +10,9 @@ def index():
 def login():
     return render_template('login.html')
 
+@app.route('/deals')
+def deals():
+    return render_template('deals.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
